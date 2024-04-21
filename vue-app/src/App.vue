@@ -6,10 +6,11 @@ import HOME from './HOME.vue'
 import CONNECT_WALLET from './components/PAGES/CONNECT_WALLET.vue';
 import SELL_ITEMS from './components/PAGES/SELL_ITEMS.vue';
 import PURCHASE_ITEMS from './components/PAGES/PURCHASE_ITEMS.vue';
+import TESTING from './TESTING.vue';
 import Web3 from 'web3';
 
 const routes = {
-  '/': HOME,
+  '/': TESTING, // HOME
   '/connect_wallet': CONNECT_WALLET,
   '/sell_items': SELL_ITEMS,
   '/purchase_items': PURCHASE_ITEMS
