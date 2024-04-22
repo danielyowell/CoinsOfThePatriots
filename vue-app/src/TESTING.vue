@@ -18,8 +18,6 @@ web3.eth.getBlockNumber()
     <div>
         <button @click="getLatestBlockNumber">Get Latest Block Number</button>
         <p>Latest Block Number: {{ latestBlockNumber }}</p>
-        <button @click="getLatestBlockNumber">Get Latest Block Number</button>
-        <p>Latest Block Number: {{ latestBlockNumber }}</p>
     </div>
 </template>
 

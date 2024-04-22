@@ -10,7 +10,8 @@ import TESTING from './TESTING.vue';
 import Web3 from 'web3';
 
 const routes = {
-  '/': TESTING, // HOME
+  '/': HOME,
+  '/testing': TESTING,
   '/connect_wallet': CONNECT_WALLET,
   '/sell_items': SELL_ITEMS,
   '/purchase_items': PURCHASE_ITEMS

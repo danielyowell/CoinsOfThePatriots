@@ -3,6 +3,7 @@ import TITLE_SUBHEADING from './components/TITLE_SUBHEADING.vue'
 import OPTIONS from './components/OPTIONS.vue'
 import Web3 from 'web3';
 import BalanceComponent from './components/BalanceComponent.vue';
+import WalletConnect from './WalletConnect.vue';
 
 // export default?
 {
@@ -14,37 +15,50 @@ import BalanceComponent from './components/BalanceComponent.vue';
 //const web3 = new Web3('https://mainnet.infura.io/v3/4fa3f4bc1fb64adeb53218145f8964c1');
 const web3 = new Web3('https://sepolia.infura.io/v3/4fa3f4bc1fb64adeb53218145f8964c1');
 const my_address = '0x118b0C278e7727C387361B2AdB83a150D711227e';
-const address = "(No wallet currently connected)";
+//const address = "(No wallet currently connected)";
 
 
 </script>
 
 <template>
-    <center>
+    <ctr>
         <header>
             <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
             <br><br>
             <div class="wrapper">
-                <center>
+                <ctr>
                     <!-- <TITLE_SUBHEADING msg="COINSOFT" /> -->
-                </center>
+                </ctr>
 
             </div>
         </header>
-    </center>
+    </ctr>
 
 
     <main>
         <OPTIONS />
     </main>
 
-    <center>
+    <ctr>
         <div>
-            <BalanceComponent />
+            <!-- <BalanceComponent /> -->
+            <WalletConnect />
         </div>
-        {{ address }}
-    </center>
+        <!-- {{ address }} -->
+    </ctr>
 
 </template>
 
-<style></style>
+<script>
+export default {
+  components: {
+    WalletConnect,
+  },
+};
+</script>
+
+<style>
+ctr {
+    text-align: center;
+}
+</style>
